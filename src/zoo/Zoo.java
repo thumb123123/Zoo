@@ -10,6 +10,7 @@ public class Zoo {
     public static void main(String[] args) {
         System.out.print(sumOff(1, 5)); // Methodenaufruf
         // Das ist die Notiz von Ben
+        // zweiter kommentar von Ben
     }
     
 }
