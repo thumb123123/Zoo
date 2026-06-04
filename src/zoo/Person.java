@@ -3,7 +3,7 @@ package zoo;
 public class Person {
 
     boolean Eurasien, Afrika, Nordamerika, Südamerika, AustralienUndOzeanien, TropischesZentrum, Meereswelt;
-    int alter, auftragsnummer;
+    int alter, auftragsnummer; //hallo
 
     public Person(int Alter, int Auftragsnummer) {
         this.alter = alter;
