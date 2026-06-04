@@ -10,3 +10,5 @@ public class Person {
         this.auftragsnummer = auftragsnummer;
     }
 }
+
+// 4 Listen: Eine string mit den bereichen eine boolean eine mit breisen erwachsen und eine mit preisen kindern
