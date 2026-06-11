@@ -6,8 +6,8 @@ public class Zoo {
         // Testcode
         Bestellung erste = new Bestellung();
         // Beispielperson
-        Person Bob = new Person(70, 1); // Alter, Auftagsnummer
-        
+        Person Bob = new Person(10, 1); // Alter, Auftagsnummer
+        Bob.bereiche.get(1).besucht = true;
         erste.Personhinzufügen(Bob);
         
         erste.Parkplatz = true;
