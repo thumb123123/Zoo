@@ -13,8 +13,14 @@ import java.util.ArrayList;
 public class Bestellungsliste {
      public ArrayList<Bestellung> Liste = new ArrayList<>();
      
-     // add bestellung 
-     // getpreis
+     public void addBestellung(){
+         Bestellung B = new Bestellung();
+         Liste.add(B);
+     }
+     
+     public Bestellung getBestellung(int index){
+         return this.Liste.get(index);
+     }
     
     
 }

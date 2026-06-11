@@ -19,8 +19,6 @@ public class Person {
     }
     int alter, auftragsnummer;
 
-    public Person(int alter, int auftragsnummer) {
-        this.alter = alter;
-        this.auftragsnummer = auftragsnummer;
+    public Person() {
     }
 }

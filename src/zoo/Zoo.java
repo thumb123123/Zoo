@@ -1,20 +1,22 @@
 package zoo;
 
+import java.util.Scanner;
+
 public class Zoo {
-
-    public static void main(String[] args) {
-        // Testcode
-        Bestellung erste = new Bestellung();
-        // Beispielperson
-        Person Bob = new Person(10, 1); // Alter, Auftagsnummer
-        Bob.bereiche.get(1).besucht = true;
-        erste.Personhinzufügen(Bob);
-        
-        erste.Parkplatz = true;
-        
-        System.out.println(erste.getPreis());
-        
-
-    }
     
+    public static void main(String[] args) {
+        // inizierungen
+        Bestellungsliste Liste = new Bestellungsliste();
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        
+        System.out.println("--Automatisierte Zoo Bestellung--");
+        System.out.println("wollen sie eine bestellung hinzufuegen? y/n");
+        if(scanner.nextLine().equals("y")){
+        Liste.addBestellung();
+            
+            
+        }
+    }
 }

@@ -4,18 +4,53 @@
  */
 package zoo;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
  * @author Ben
  */
 public class Bestellung {
+    Scanner scanner = new Scanner(System.in);
     public ArrayList<Person> PersonListe = new ArrayList<>();
     public boolean Parkplatz;
     public int Parkplatzpreis = 5; // Preis in €
     public int KindAlter = 17;
     // Konstruktor
     public Bestellung(){
+        int i = 0;
+        while(true){
+            Person p = new Person();
+            // Abfrage von daten
+            System.out.println("wie alt ist die Person?");
+            int alter = scanner.nextInt();
+            scanner.skip("/");
+            
+           
+            
+            for(int j = 0; j < p.bereiche.size(); j++){
+                int preis = 0;
+                if(alter>this.KindAlter){
+                    preis =  p.bereiche.get(j).getPreisErwachsen();
+                }else{
+                    preis = p.bereiche.get(j).getPreisKind();
+                }
+                System.out.println("Wollen sie den Bereich " + p.bereiche.get(j).getName() + " fuer " + preis + " euro buchen? y/n");
+                if(scanner.nextLine().equals("y")){
+                    p.bereiche.get(j).besucht= true;
+                }
+                
+            }
+            p.auftragsnummer = i;
+            Personhinzufügen(p);
+            System.out.println("Wollen sie eine Person hinzufuegen? y/n");
+            if(!scanner.nextLine().equals("y")){
+                    break;
+                }
+            
+            
+            
+        }
         
     }
     
