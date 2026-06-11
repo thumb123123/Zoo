@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Person {
 
-    public static ArrayList<Bereich> bereiche = new ArrayList<>();
+    public ArrayList<Bereich> bereiche = new ArrayList<>();
 
-    static {
+    {
         bereiche.add(new Bereich("Eurasien", 5, 2));
         bereiche.add(new Bereich("Afrika", 10, 5));
         bereiche.add(new Bereich("Nordamerika", 15, 7));
