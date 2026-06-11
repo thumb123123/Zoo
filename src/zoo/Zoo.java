@@ -13,7 +13,6 @@ public class Zoo {
         erste.Parkplatz = true;
         
         System.out.println(erste.getPreis());
-        System.out.println("Ende");
         
 
     }

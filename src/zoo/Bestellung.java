@@ -21,11 +21,9 @@ public class Bestellung {
     
     public void Personhinzufügen(Person Kunde){
         PersonListe.add(Kunde);
-        System.out.println("person hinzugefügt");
     }
     
     public int getPreis(){
-        System.out.println("presis wird berechnet");
         int preis=0;
         for(int i = 0; i < PersonListe.size(); i++){
             Person Person = this.PersonListe.get(i);
@@ -45,7 +43,6 @@ public class Bestellung {
         if(this.Parkplatz==true){
             preis += this.Parkplatzpreis;
         }
-        System.out.println("preis wurde berechnet");
         return preis;
     }
     
