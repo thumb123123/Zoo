@@ -24,7 +24,7 @@ public class Bestellung {
             // Abfrage von daten
             System.out.println("wie alt ist die Person?");
             int alter = scanner.nextInt();
-            scanner.skip("/");
+            scanner.nextLine();
             
            
             
